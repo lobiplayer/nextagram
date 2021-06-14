@@ -6,7 +6,7 @@ function LoadingIndicator() {
     
     return (
         <div className="LoadingIndicator">
-            <img src= {spinnerloading} className='loading' />
+            <img src= {spinnerloading} alt='loading indicator' className='loading' />
         </div>
     );
 }

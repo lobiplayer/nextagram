@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Label, Input } from 'reactstrap';
 
 function SignUpComponent() {
 

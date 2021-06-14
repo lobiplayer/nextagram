@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import {
   Collapse,
   Navbar,
@@ -8,11 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from 'reactstrap';
 
 import { useHistory } from "react-router-dom";
@@ -28,7 +22,7 @@ const NavBar = () => {
 
   //has to be deleted and have to make a toggle with usestate instead.
 const hideShowMyProfile = () => {
-  if (localStorage.getItem('userID') == '') {
+  if (localStorage.getItem('userID') === '') {
     return { display: 'none'}
   }
   

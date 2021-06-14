@@ -21,7 +21,7 @@ function UserImages({userID}) {
                 // If unsuccessful, we notify users what went wrong
                 console.log('ERROR: ', error)
             })
-    }, [])
+    }, [userID])
 
 
     if (isLoading) {

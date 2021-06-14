@@ -5,7 +5,6 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const SignInModal = (props) => {
     const {
-        buttonLabel,
         className
     } = props;
 
@@ -45,7 +44,7 @@ const SignInModal = (props) => {
                             <SignUpComponent />
                         </ModalBody>
                         <ModalFooter>
-                            <p>Already have an account? <a className="link-primary" onClick={toggleNested}>Sign in here</a></p>
+                            <p>Already have an account? <span className="link-primary" onClick={toggleNested}>Sign in here</span></p>
                             <Button color="danger" onClick={toggleAll}>Cancel</Button>
                         </ModalFooter>
                     </Modal>

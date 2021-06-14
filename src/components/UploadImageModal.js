@@ -6,7 +6,6 @@ import UploadImageComponent from './UploadImageComponent'
 
 const UploadImageModal = (props) => {
     const {
-        buttonLabel,
         className
     } = props;
 

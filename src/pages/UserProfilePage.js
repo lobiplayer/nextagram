@@ -25,7 +25,7 @@ const UserProfilePage = () => {
                 // If unsuccessful, we notify users what went wrong
                 console.log('ERROR: ', error)
             })
-    }, [])
+    }, [userId.id])
 
 
     if (isLoading) {

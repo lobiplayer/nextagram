@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Label, Input } from 'reactstrap';
 
 function SignInComponent({ toggleNested }) {
 
@@ -82,7 +82,7 @@ function SignInComponent({ toggleNested }) {
                 <Input type="password" id='password' placeholder="password" value={password} onChange={(e) => { changePassword(e.target.value) }} />
                 <br />
                 <Button color="success" onClick={login}>Login</Button>
-                <p>Not a user yet? <a className="link-primary" onClick={toggleNested}>click here</a> to make an account.</p>
+                <p>Not a user yet? <span className="link-primary" onClick={toggleNested}>click here</span> to make an account.</p>
     
             </>
         )

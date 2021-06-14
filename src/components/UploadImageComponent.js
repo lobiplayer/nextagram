@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
 import Dropzone from 'react-dropzone'
 
 const UploadImageComponent = () => {
@@ -99,6 +99,7 @@ const UploadImageComponent = () => {
                         {previewImage ? (
                             <img
                                 src={previewImage}
+                                alt='preview image'
                                 width="50%"
                                 height="50%"
                             />
