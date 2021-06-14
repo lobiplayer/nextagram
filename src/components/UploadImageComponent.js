@@ -69,10 +69,6 @@ const UploadImageComponent = () => {
             </Dropzone>
 
 
-
-
-
-            
             <Form onSubmit={
                 (e) => {
                     e.preventDefault();
@@ -99,7 +95,7 @@ const UploadImageComponent = () => {
                         {previewImage ? (
                             <img
                                 src={previewImage}
-                                alt='preview image'
+                                alt='preview of the upload'
                                 width="50%"
                                 height="50%"
                             />
