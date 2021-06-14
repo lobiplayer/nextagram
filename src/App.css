@@ -1,0 +1,82 @@
+
+.userInfo {
+  background-color: grey;
+  display: flexbox;
+  width: fit-content;
+  padding: 10px;
+  margin: 1%;
+  text-align: center;
+}
+
+.userInfo img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 600;
+}
+
+.userid {
+  text-align:start;
+}
+
+.LoadingIndicator {
+  padding: 10px;
+  margin: 1%;
+  text-align: center;
+}
+
+/* .loading {
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  
+} */
+
+.userimages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.userimages img {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* modal css */
+
+.SignInModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-body {
+  text-align: center;
+}
