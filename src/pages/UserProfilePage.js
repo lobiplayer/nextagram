@@ -34,7 +34,6 @@ const UserProfilePage = () => {
 
     return (
         <div className="userProfilePage">
-            <h1>UserProfilePage</h1>
             <UserInfo user={user} />
 
             <UserImages userID={userId.id} />

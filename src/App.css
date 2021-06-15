@@ -1,12 +1,39 @@
 
-.userInfo {
-  background-color: grey;
+.userContainer {
   display: flexbox;
+}
+
+.userContainer .userInfo {
+  
+  border: 3px solid grey;
+  display: inline-block;
+  border-radius: 5px;
   width: fit-content;
-  padding: 10px;
+  height: auto;
+  padding: 20px;
   margin: 1%;
   text-align: center;
 }
+
+.photo {
+  display: inline;
+}
+
+.userimages {
+  display: inline-block;
+}
+
+.userContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userimages img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
 
 .userInfo img {
   width: 150px;
@@ -25,26 +52,6 @@
   padding: 10px;
   margin: 1%;
   text-align: center;
-}
-
-/* .loading {
- position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
-  
-} */
-
-.userimages {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.userimages img {
-  width: 200px;
-  height: 200px;
 }
 
 
@@ -79,4 +86,8 @@
 
 .modal-body {
   text-align: center;
+}
+
+.btn {
+  margin: 5px;
 }

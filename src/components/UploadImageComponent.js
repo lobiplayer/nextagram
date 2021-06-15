@@ -52,10 +52,13 @@ const UploadImageComponent = () => {
     }
     return (
         <div className='UploadImageComponent'>
-            <Dropzone onDrop={
-                (e) => {
-                    e.preventDefault()
-                    postImage();
+            <Dropzone onDrop =
+            {
+                (acceptedFiles) => {
+                    console.log(acceptedFiles[0])
+                    setImageFile(acceptedFiles[0])
+                    setPreviewImage(URL.createObjectURL(acceptedFiles[0]))
+                    setImageFile(acceptedFiles[0])
                 }
             }>
                 {({ getRootProps, getInputProps }) => (
@@ -77,17 +80,7 @@ const UploadImageComponent = () => {
                 }
             }>
                 <FormGroup>
-                    <Input
-                        type="file"
-                        name="image-file"
-                        onChange={
-                            (e) => {
-                                setImageFile(e.target.files[0])
-                                setPreviewImage(URL.createObjectURL(e.target.files[0]))
-                                setImageFile(e.target.files[0])
-                            }
-                        }
-                    />
+                   
                     {/* <FormText color="muted">
                         Make sure the image being uploaded is a supported format.
     </FormText> */}
@@ -108,7 +101,7 @@ const UploadImageComponent = () => {
                 </FormGroup>
                 <Button type="submit" color="success">
                     Upload
-  </Button>
+                </Button>
             </Form>
         </div>
 
