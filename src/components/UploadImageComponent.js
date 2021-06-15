@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import { Button, Form, FormGroup, Input } from 'reactstrap';
+import { Button, Form, FormGroup } from 'reactstrap';
 import Dropzone from 'react-dropzone'
 
 const UploadImageComponent = () => {
